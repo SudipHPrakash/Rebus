@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Beyond Bandwidth Rebus Puzzle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="shell">
+  <section class="hero">
+    <div class="eyebrow">BEYOND BANDWIDTH • #OffTheClock</div>
+    <h1>REBUS PUZZLE</h1>
+    <h2>Can You Crack the Code?</h2>
+    <p>Enter your details and all eight answers, then tap submit.</p>
+  </section>
+
+  <section class="card">
+    <form id="rebusForm" action="https://script.google.com/macros/s/AKfycby4vqEjYMDRHDLubYOhu4jrohSmKgKnnpdh3tUoRX-uN6EVjgz_w4yySe7fTlvkgU8oFQ/exec" method="POST" target="submitFrame">
+      <input type="hidden" name="source" value="bb-rebus-2026">
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off">
+
+      <label>Name *</label>
+      <input name="name" required maxlength="120">
+
+      <label>Work Email / Employee ID *</label>
+      <input name="identity" required maxlength="160">
+
+      <div class="grid">
+        <div><label>Answer 1 *</label><textarea name="answer1" required maxlength="500"></textarea></div><div><label>Answer 2 *</label><textarea name="answer2" required maxlength="500"></textarea></div><div><label>Answer 3 *</label><textarea name="answer3" required maxlength="500"></textarea></div><div><label>Answer 4 *</label><textarea name="answer4" required maxlength="500"></textarea></div><div><label>Answer 5 *</label><textarea name="answer5" required maxlength="500"></textarea></div><div><label>Answer 6 *</label><textarea name="answer6" required maxlength="500"></textarea></div><div><label>Answer 7 *</label><textarea name="answer7" required maxlength="500"></textarea></div><div><label>Answer 8 *</label><textarea name="answer8" required maxlength="500"></textarea></div>
+      </div>
+
+      <div class="note">Your details are used only for this Rebus Puzzle submission and related recognition/communication.</div>
+      <button id="submitBtn" type="submit">Submit My Answers</button>
+      <div id="status" class="status" aria-live="polite"></div>
+    </form>
+    <iframe id="submitFrame" name="submitFrame" class="frame" title="submission"></iframe>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
